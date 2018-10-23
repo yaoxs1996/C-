@@ -1,1 +1,0 @@
-del /a /f /q *.exe
