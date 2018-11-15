@@ -11,12 +11,13 @@ bool deleteSame(vector<int> &L)
     if(L.size() == 0)
         return false;
 
+    //类似直接插入排序的思想
     int i, j;
-    for(i=0, j=1; j<L.size(); j++)
+    for(i=0, j=1; j<L.size(); j++)    //此处为j++
     {
         if(L[i] != L[j])
         {
-            L[++i] = L[j];
+            L[++i] = L[j];    //仅当不等时，++i，请注意
         }
     }
 
