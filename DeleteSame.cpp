@@ -21,6 +21,9 @@ bool deleteSame(vector<int> &L)
     }
 
     //删除后序的重复序列
+    /*C version
+    L.length=i+1*/
+    
     for(j=0; j<=i; j++)
         L.pop_back();
 
